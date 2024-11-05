@@ -1,0 +1,5 @@
+# Ignore GameMaker temporary files and backups
+*.tmp
+*.yyz
+*.dll
+.idea/
