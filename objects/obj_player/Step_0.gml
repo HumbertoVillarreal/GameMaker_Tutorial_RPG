@@ -7,18 +7,6 @@ x_spd = (right_key - left_key) * move_spd;
 y_spd = (down_key - up_key) * move_spd;
 
 
-//Collisionns
-if place_meeting(x + x_spd, y, obj_wall) == true{
-	x_spd = 0;
-}
-if place_meeting(x, y + y_spd, obj_wall) == true{
-	y_spd = 0;
-}
-
-//Move player
-x += x_spd;
-y += y_spd;
-
 
 //Set sprite
 if y_spd == 0 {
@@ -39,3 +27,21 @@ if x_spd == 0 {
 if y_spd > 0 and face == UP {face = DOWN}
 if y_spd < 0 and face == DOWN {face = UP}
 sprite_index = sprite[face]
+
+
+//Collisionns
+if place_meeting(x + x_spd, y, obj_wall) == true{
+	x_spd = 0;
+}
+if place_meeting(x, y + y_spd, obj_wall) == true{
+	y_spd = 0;
+}
+
+//Move player
+x += x_spd;
+y += y_spd;
+
+
+
+//Animate
+if x_spd == 0 and y_spd == 0 {image_index = 0}
