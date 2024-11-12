@@ -45,3 +45,7 @@ y += y_spd;
 
 //Animate
 if x_spd == 0 and y_spd == 0 {image_index = 0}
+
+
+//Depth
+depth = -bbox_bottom
