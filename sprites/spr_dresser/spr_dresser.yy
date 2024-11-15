@@ -3,8 +3,8 @@
   "%Name":"spr_dresser",
   "bboxMode":0,
   "bbox_bottom":44,
-  "bbox_left":0,
-  "bbox_right":47,
+  "bbox_left":4,
+  "bbox_right":51,
   "bbox_top":2,
   "collisionKind":1,
   "collisionTolerance":0,
@@ -90,5 +90,5 @@
   },
   "type":0,
   "VTile":false,
-  "width":48,
+  "width":56,
 }
