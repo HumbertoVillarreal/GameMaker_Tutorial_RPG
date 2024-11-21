@@ -7,6 +7,13 @@ x_spd = (right_key - left_key) * move_spd;
 y_spd = (down_key - up_key) * move_spd;
 
 
+if instance_exists(obj_pauser){
+	
+	x_spd = 0;
+	y_spd = 0;
+	
+}
+
 
 //Set sprite
 if y_spd == 0 {
